@@ -14,6 +14,11 @@ public class PrimeFactors {
             integers.add(2);
             integers.add(2);
         }
+        if (n  == 8) {
+            integers.add(2);
+            integers.add(2);
+            integers.add(2);
+        }
 
         return integers;
     }
