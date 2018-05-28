@@ -1,9 +1,10 @@
 package com.kata;
 
+import java.util.Collections;
 import java.util.List;
 
 public class PrimeFactors {
     public List<Integer> factorsOf(Integer integer) {
-        throw new UnsupportedOperationException();
+        return Collections.emptyList();
     }
 }
