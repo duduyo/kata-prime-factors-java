@@ -23,5 +23,6 @@ public class PrimeFactorsTest {
     void should_return_factors_for_power_of_2() {
         assertThat(primeFactors.factorsOf(2)).containsExactlyInAnyOrder(2);
         assertThat(primeFactors.factorsOf(2*2)).containsExactlyInAnyOrder(2, 2);
+        assertThat(primeFactors.factorsOf(2*2*2)).containsExactlyInAnyOrder(2, 2, 2);
     }
 }
