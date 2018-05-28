@@ -11,4 +11,11 @@ public class PrimeFactorsTest {
         PrimeFactors primeFactors = new PrimeFactors();
         assertThat(primeFactors.factorsOf(1)).isEmpty();
     }
+
+    @Test
+    void should_return_factors_for_2() {
+        PrimeFactors primeFactors = new PrimeFactors();
+        assertThat(primeFactors.factorsOf(2)).containsExactlyInAnyOrder(2);
+
+    }
 }
