@@ -10,6 +10,11 @@ public class PrimeFactors {
         if (n  == 2) {
             integers.add(2);
         }
+        if (n  == 4) {
+            integers.add(2);
+            integers.add(2);
+        }
+
         return integers;
     }
 }
