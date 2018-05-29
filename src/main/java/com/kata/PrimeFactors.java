@@ -12,6 +12,12 @@ public class PrimeFactors {
             integers.add(2);
             n /= 2;
         }
+
+        while (n % 3 == 0) {
+            integers.add(3);
+            n /= 3;
+        }
+
         return integers;
     }
 }
