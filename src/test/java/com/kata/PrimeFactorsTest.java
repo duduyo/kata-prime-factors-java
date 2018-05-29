@@ -25,4 +25,12 @@ public class PrimeFactorsTest {
         assertThat(primeFactors.factorsOf(2*2)).containsExactlyInAnyOrder(2, 2);
         assertThat(primeFactors.factorsOf(2*2*2)).containsExactlyInAnyOrder(2, 2, 2);
     }
+
+    @Test
+    void should_return_factors_for_power_of_3() {
+        assertThat(primeFactors.factorsOf(3)).containsExactlyInAnyOrder(3);
+        assertThat(primeFactors.factorsOf(3*3)).containsExactlyInAnyOrder(3, 3);
+        assertThat(primeFactors.factorsOf(3*3*3)).containsExactlyInAnyOrder(3, 3, 3);
+    }
+
 }
