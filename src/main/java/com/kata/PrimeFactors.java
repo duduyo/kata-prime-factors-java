@@ -8,16 +8,12 @@ public class PrimeFactors {
 
         List<Integer> integers = new ArrayList<>();
 
-        Integer primeCandidate = 2;
-        while (n % primeCandidate == 0) {
-            integers.add(primeCandidate);
-            n /= primeCandidate;
-        }
+        for (Integer primeCandidate = 2; primeCandidate <= n; primeCandidate++) {
 
-        primeCandidate = 3;
-        while (n % primeCandidate == 0) {
-            integers.add(primeCandidate);
-            n /= primeCandidate;
+            while (n % primeCandidate == 0) {
+                integers.add(primeCandidate);
+                n /= primeCandidate;
+            }
         }
 
         return integers;
